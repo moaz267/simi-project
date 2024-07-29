@@ -44,6 +44,16 @@ nav .contact-me{
     color: black;
     font-weight: bold;
 }
+nav .about{
+    width: 180px;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .contact-me a{
+    text-decoration: none;
+}
 nav .contact-me :hover{
     cursor: pointer;
     animation: about 1.5s ;
