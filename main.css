@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -179,6 +180,7 @@ nav button:hover{
         opacity: 0;
     }
 }
+
 .intro #name{
     width:25% ;
     flex-wrap: wrap;
@@ -485,10 +487,173 @@ padding-inline: 15rem;
     -o-transition: 1s;
 }
 
-.footer{
-    height: 100vh;
+.skills{
+    height: 165vh;
+}
+.skills .skills-container{
+    display: flex;
+    padding-top: 5rem;
+    padding-inline: 2rem;
+    gap: 5rem;
+
+}
+.skills .skills-container .left{
+    position: sticky;
+    top: 5rem;
+    width: 50%;
+    height: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Inter Tight", sans-serif;
+}
+.skills .skills-container .left p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Inter Tight", sans-serif;
+    color: rgb(82, 82, 82);
+    padding-top: 2rem;
+    font-family: "Inter Tight", sans-serif;
+}
+.skills-container{
+        display: flex;
+        justify-content: center;
+}
+.skills .skills-container .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+.box-container{
+    width: 100%;
+}
+.skills-container .right .box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px solid #26262629;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+}
+.skills-container .right .box span{
+    font-size: 4rem;
+}
+.skills-container .right .box h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.skills-container .right .box p{
+    font-size: 1rem;
+}    
+.experiance{
+    height: 145vh;
+}
+.experiance .experiance-container{
+    display: flex;
+    padding-top: 12rem;
+    padding-inline: 2rem;
+    gap: 5rem;
+
+}
+.experiance .experiance-container .left{
+    position: sticky;
+    top: 5rem;
+    width: 50%;
+    height: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Inter Tight", sans-serif;
 }
 
+
+.experiance-container{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+}
+.experiance .experiance-container .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+.experiance .experiance-container.box-container{
+    width: 100%;
+}
+.experiance-container .right .box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid #26262629;
+    padding-bottom: 50px;
+}
+.experiance-container .right .box div{
+    font-size: 30px;
+    font-weight:700;
+    text-transform: uppercase;
+    font-family: "Inter Tight", sans-serif;
+    padding-top: 40px;
+}
+.experiance-container .right .box h4{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+}
+.experiance-container .right .box p{
+    /*margin-top: 1rem;
+    */font-size: 1rem;
+}  
+
+.footer-area{
+    margin-top: 10rem;
+}
+.footer-area .footer-title{
+    background: #c3bfbfa3;
+    border-radius:30px ;
+    text-transform: uppercase;
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 150px;
+    text-align: center;
+    font-weight: 700;
+    overflow: hidden;
+    font-family: "Inter Tight", sans-serif;
+    -webkit-border-radius:30px ;
+    -moz-border-radius:30px ;
+    -ms-border-radius:30px ;
+    -o-border-radius:30px ;
+}
+
+.footer-area .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px 40px;
+}
+
+.footer-area .footer-content p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: "Inter Tight", sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+}
+.footer-area .footer-content a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-area .footer-content a :hover{
+    text-decoration:underline;
+}
 @media (max-width: 809px)  {
     .main-section{
         height: 50vh;
@@ -565,7 +730,7 @@ padding-inline: 15rem;
         -o-transform: translateX(1.3rem);
 }
 .about-me-section{
-    height: 150vh;
+    height: 110vh;
 }
 .about-me{
     display: flex;
@@ -713,7 +878,7 @@ padding-inline: 15rem;
 }
 .more-about-me{
     background: #fff;
-    height: 250vh;
+    height: 170vh;
 }
 .more-about-me .header p{
     font-size: 40px;
@@ -745,5 +910,63 @@ padding-inline: 15rem;
     justify-content: center;
     font-size: 24px;
     line-height: 28px;
+}
+.skills{
+    height: 210vh;
+}
+.skills .skills-container{
+    display: flex;
+    padding-top: 5rem;
+    padding-inline: 2rem;
+    gap: 5rem;
+
+}
+.skills .skills-container .left{
+    position: sticky;
+    top: 5rem;
+    width: 50%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Inter Tight", sans-serif;
+}
+.experiance{
+    height: 145vh;
+}
+.experiance .experiance-container{
+    display: flex;
+    padding-top: 0rem;
+    padding-inline: 2rem;
+    gap: 5rem;
+
+}
+.experiance .experiance-container .left{
+    position: none;
+    width: 100%;
+    top: 5rem;
+    font-size: 2rem;
+    padding-left: 4rem;
+}
+.box-container{
+    transform: translate(-5rem, 1rem);
+    -webkit-transform: translate(-5rem, 1rem);
+    -moz-transform: translate(-5rem, 1rem);
+    -ms-transform: translate(-5rem, 1rem);
+    -o-transform: translate(-5rem, 1rem);
+}
+.experiance-container .right .box h4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+}
+.experiance-container .right .box h4 span{
+    padding-bottom: 10px;
+}
+.footer-area {
+    visibility: hidden;
 }
 }
